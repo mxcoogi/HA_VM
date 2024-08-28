@@ -1,0 +1,26 @@
+// 스택으로 넘겨받은 인자들의 합
+Int8 sum_args(int8, int8, …) {
+	int8 x = 0, sum = 0, cnt = 0;
+	cnt = pop();
+	until (cnt == 0) {
+		x = pop();
+		sum += x;
+		cnt--;
+	}
+	return sum;
+}
+!
+alias A cnt
+alias B x
+alias C sum
+alias D zero
+pop cnt
+push 12
+je cnt, zero
+pop x
+acc sum x
+sub cnt 1
+push 5
+je zero, zero
+push sum
+ret

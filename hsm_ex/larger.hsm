@@ -1,0 +1,21 @@
+// A, B 중에 큰 값
+int8 larger(int8 A, int8 B) {
+	int8 A = 0, B = 0;
+	A = pop(); // argc 버림
+	B = pop();
+	A = pop();
+	if (A >= B)
+		return A
+	else
+		return B
+}
+!
+pop A
+pop B
+pop A
+push 7
+jge A B
+push B
+ret
+push A
+ret

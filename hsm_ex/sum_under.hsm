@@ -1,0 +1,23 @@
+// 1+2+...+n
+int8 sum_under(int8 n) {
+	int8 x = 0, sum = 0, n = 0;
+	n = pop();   	// argc 읽어서 버림
+	n = pop();
+	do {
+		x++;
+		sum += x;
+	} until (x == n);
+	return sum;
+}
+!
+alias A n
+alias B x
+alias C sum
+pop n
+pop n
+add x 1
+acc sum x
+push 5
+je x n
+push sum
+ret

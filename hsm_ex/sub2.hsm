@@ -1,0 +1,18 @@
+// A - B
+int8 sub2(int8 A, int8 B) {
+	int8 A = 0, B = 0;
+	A = pop(); // argc ¹ö¸²
+	B = pop();
+	A = pop();
+	B = -B;
+	A += B;
+	return A;
+}
+!
+pop A
+pop B
+pop A
+neg B
+acc A B
+push A
+ret

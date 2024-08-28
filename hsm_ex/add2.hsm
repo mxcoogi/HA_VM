@@ -1,0 +1,16 @@
+// A + B
+int8 add2(int8 A, int8 B) {
+	int8 A = 0, B = 0;
+	A = pop(); // argc ¹ö¸²
+	B = pop();
+	A = pop();
+	B += A;
+	return B;
+}
+!
+pop A
+pop B
+pop A
+acc B A
+push B
+ret
